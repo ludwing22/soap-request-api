@@ -1,0 +1,158 @@
+============== AddInteger ===============
+
+
+============== Request ===============
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s0="http://tempuri.org">
+  <soap:Body>
+    <s0:AddInteger xmlns:s0="http://tempuri.org" xmlns="http://tempuri.org">
+      <s0:Arg1>1</s0:Arg1>
+      <s0:Arg2>2</s0:Arg2>
+    </s0:AddInteger>
+  </soap:Body>
+</soap:Envelope>
+
+
+============== Response ===============
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema'>
+  <SOAP-ENV:Body>
+    <AddIntegerResponse xmlns="http://tempuri.org">
+      <AddIntegerResult>3</AddIntegerResult>
+    </AddIntegerResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+==================================================================================
+
+
+============== LookupCity ===============
+
+
+============== Request ===============
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s0="http://tempuri.org">
+  <soap:Body>
+    <s0:LookupCity xmlns:s0="http://tempuri.org" xmlns="http://tempuri.org">
+      <s0:zip>10001</s0:zip>
+    </s0:LookupCity>
+  </soap:Body>
+</soap:Envelope>
+
+
+============== Response ===============
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema'>
+  <SOAP-ENV:Body>
+    <LookupCityResponse xmlns="http://tempuri.org">
+      <LookupCityResult>
+        <City>New York</City>
+        <State>NY</State>
+        <Zip>10001</Zip>
+      </LookupCityResult>
+    </LookupCityResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+==================================================================================
+
+
+============== Mission ===============
+
+
+============== Request ===============
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s0="http://tempuri.org">
+  <soap:Body>
+    <s0:Mission xmlns:s0="http://tempuri.org" xmlns="http://tempuri.org"></s0:Mission>
+  </soap:Body>
+</soap:Envelope>
+
+
+============== Response ===============
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema'>
+  <SOAP-ENV:Body>
+    <MissionResponse xmlns="http://tempuri.org">
+      <MissionResult>The industry leader in high-tech enterprise Internet consulting services for consumers.
+      </MissionResult>
+    </MissionResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+==================================================================================
+
+
+============== FindPerson ===============
+
+
+============== Request ===============
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s0="http://tempuri.org">
+  <soap:Body>
+    <s0:FindPerson xmlns:s0="http://tempuri.org" xmlns="http://tempuri.org">
+      <s0:id>1</s0:id>
+    </s0:FindPerson>
+  </soap:Body>
+</soap:Envelope>
+
+
+============== Response ===============
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/'
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema'>
+  <SOAP-ENV:Body>
+    <FindPersonResponse xmlns="http://tempuri.org">
+      <FindPersonResult>
+        <Name>Newton,Dave R.</Name>
+        <SSN>384-10-6538</SSN>
+        <DOB>2000-03-20</DOB>
+        <Home>
+          <Street>6977 First Street</Street>
+          <City>Pueblo</City>
+          <State>AK</State>
+          <Zip>63163</Zip>
+        </Home>
+        <Office>
+          <Street>9984 Second Blvd</Street>
+          <City>Washington</City>
+          <State>MN</State>
+          <Zip>42829</Zip>
+        </Office>
+        <FavoriteColors>
+          <FavoriteColorsItem>Red</FavoriteColorsItem>
+        </FavoriteColors>
+        <Age>22</Age>
+      </FindPersonResult>
+    </FindPersonResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+==================================================================================
